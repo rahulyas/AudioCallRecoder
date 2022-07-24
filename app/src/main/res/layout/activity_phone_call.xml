@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".PhoneCall.PhoneCall">
+
+    <!-- EditText for entering a phone number  -->
+    <EditText
+        android:id="@+id/editText_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:inputType="phone"
+        android:hint="Enter a phone number" />
+
+    <!-- The callNumber() method will be called by this button.  -->
+    <ImageButton
+        android:id="@+id/phone_icon"
+        android:contentDescription="Make a call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/editText_main"
+        android:layout_toEndOf="@id/editText_main"
+        android:src="@drawable/ic_call_black_24dp"
+        android:onClick="callNumber"/>
+
+    <!-- The retryApp() method will be called by this button.  -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_retry"
+        android:contentDescription="Retry"
+        android:layout_below="@id/editText_main"
+        android:text="Retry"
+        android:visibility="invisible"
+        android:onClick="retryApp"/>
+
+    <!-- TextView for incoming call's phone number  -->
+    <TextView
+        android:id="@+id/incoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_retry"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        android:text="Phone call from:"/>
+</RelativeLayout>

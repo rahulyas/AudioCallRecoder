@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#03DAC5">
+
+    <EditText
+        android:id="@+id/edit_text_number"
+        android:layout_width="295dp"
+        android:layout_height="55dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:hint="Number"
+        android:inputType="phone"
+        android:textColor="#DF561A"
+        android:textColorHint="@color/white" />
+
+    <ImageView
+        android:layout_below="@+id/edit_text_number"
+        android:id="@+id/image_call"
+        android:layout_width="73dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/call" />
+    <!--
+        <Button
+            android:id="@+id/btn"
+            android:layout_below="@+id/edit_text_number"
+            android:layout_width="73dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/textSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Switch on Toggle to record your calls"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp" />
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/toggle_selector"
+            android:onClick="toggleButtonClick"
+            android:text="ToggleButton"
+            android:textColor="#ffffff"
+            android:visibility="visible"
+            android:layout_below="@id/textSubHeader"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            />  -->
+
+
+</RelativeLayout>
